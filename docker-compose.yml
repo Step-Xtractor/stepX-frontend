@@ -10,7 +10,7 @@ services:
         environment: 
             API_URL: http://localhost:3003/
             # REACT_APP_BACKEND_URL: http://localhost:3003/
-            REACT_APP_BACKEND_URL: https://stepx.lrgesystems.com/api/
+            REACT_APP_BACKEND_URL: 
         links: 
             - backend
         stdin_open: true
