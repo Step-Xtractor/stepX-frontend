@@ -1,0 +1,41 @@
+version: '2'
+services:
+    frontend:
+        build: ./
+        ports: 
+            - 3005:3000
+        command: bash -c 'yarn && yarn start'
+        volumes:
+            - ./:/app
+        environment: 
+            API_URL: http://localhost:3003/
+            # REACT_APP_BACKEND_URL: http://localhost:3003/
+            REACT_APP_BACKEND_URL: https://stepx.lrgesystems.com/api/
+        links: 
+            - backend
+        stdin_open: true
+
+
+    # mongo:
+    #     image: mongo
+    #     ports:
+    #         - "27017:27017"
+    #     volumes:
+    #         - ../step-api/:/app
+    # #   restart: always
+    #     # environment:
+    #     # MONGO_INITDB_ROOT_USERNAME: root
+    #     # MONGO_INITDB_ROOT_PASSWORD: root
+
+    # backend:
+    #     build: ../step-api/
+    #     ports:
+    #         - 3003:3003
+    #     command: npm run dev
+    #     volumes:
+    #         - ../step-api/:/app
+    #     environment:
+    #         DB_URL: mongodb://mongo:27017/stepX
+    #     depends_on:
+    #         - mongo
+  

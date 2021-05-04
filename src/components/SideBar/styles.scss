@@ -1,0 +1,96 @@
+$sidebar-bg-color: #D4D4D4;
+$submenu-bg-color: rgba(255, 255, 255, 0.05);
+$submenu-bg-color-collapsed: rgba(29, 29, 29, 0.95);
+$sidebar-color: #757575;
+$highlight-color: black;
+$icon-bg-color: rgba(255, 255, 255, 0.05);
+$icon-size: 35px;
+
+@import '~react-pro-sidebar/dist/scss/styles.scss';
+
+.pro-sidebar .pro-menu .pro-menu-item.active {
+  background-color: white;
+}
+
+#root{
+  height: 100%;
+}
+
+.pro-sidebar {
+  margin-bottom: -5000px;
+  // padding-bottom: 5000px;
+  // overflow: hidden;
+}
+
+.pro-sidebar .pro-menu .pro-menu-item > .pro-inner-item:focus {
+  color: unset; 
+}
+
+// .pro-sidebar .pro-menu .pro-menu-item > .pro-inner-item:hover .pro-icon-wrapper .pro-icon {
+//   animation: unset;
+// }
+
+body {
+  margin: 0;
+  font-family: 'Poppins';
+  // height: 100vh;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: $sidebar-color;
+  transition: color 0.2s;
+}
+
+.pro-sidebar .pro-menu .pro-menu-item > .pro-inner-item {
+  transition: color 0.2s;
+}
+
+// .pro-sidebar .pro-menu .pro-menu-item > .pro-inner-item:hover , a:hover {
+//   color: #adadad
+// }
+
+.inner-item-with-icon {
+  vertical-align: middle;
+  svg {
+    vertical-align: middle;
+    margin-right: 0.4rem;
+  }
+}
+
+.app {
+  // height: 100%;
+  display: flex;
+  position: fixed;
+  z-index: 100;
+
+  .btn-toggle {
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    background: var(--color-primary);
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    display: none;
+    margin: 0.8rem 0.8rem;
+  }
+
+  main {
+    padding: 24px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    .btn-toggle {
+      display: flex;
+    }
+  }
+}

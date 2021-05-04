@@ -1,0 +1,139 @@
+@import './font/poppins.css';
+
+$font-family-base: 'Poppins';
+
+@import "./bootstrap/scss/bootstrap.scss";
+
+:root {
+  --color-background: #F7F8FC;
+  --color-primary: #000000;
+  --color-brown: #422422;
+  --color-box-base: #FFFFFF;
+
+  --color-primary-lighter: #9871F5;
+  --color-primary-light: #916BEA;
+  /* --color-primary: #8257E5; */
+  --color-primary-dark: #774DD6;
+  --color-primary-darker: #6842C2;
+  --color-secundary: #04D361;
+  --color-secundary-dark: #04BF58;
+  --color-title-in-primary: #FFFFFF;
+  --color-text-in-primary: #D4C2FF;
+  --color-text-title: #32264D;
+  --color-text-complement: #9C98A6;
+  --color-text-base: #6A6180;
+  --color-line-in-white: #E6E6F0;
+  --color-input-background: #F8F8FC;
+  --color-button-text: #FFFFFF;
+  --color-box-footer: #FAFAFC;
+
+  // font-size: 60%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: var(--color-background);
+  @media (max-width: 768px) {
+    background: var(--color-box-base);
+  }
+}
+
+#root{
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+body, input, button, textarea{
+  // font: 400 1.6rem Poppins;
+  /* color: var(--color-text-base) */
+}
+
+@media(min-width: 700px){
+  :root{
+    // font-size: 62.5%;
+  }
+}
+
+@media (max-width: 768px){
+  .pro-sidebar.md {
+    // left: -310px !important;
+  }
+ 
+}
+
+
+@media (max-width: 1600px){
+  #myTab{
+    padding-left: 350px !important;
+  }
+}
+
+@media (max-width: 768px){
+  #myTab{
+    padding-left: 60px !important;
+  }
+}
+
+
+
+.pro-sidebar{
+  // width: unset !important;
+}
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+.swal2-popup {
+  font-size: 1.4rem !important;
+}
+
+/* .swal2-title, .swal2-content {
+  color: var(--color-primary) !important;
+} */
+
+.swal2-confirm {
+  background-color: var(--color-primary) !important;
+}
+
+
+.list-style-none{
+  list-style:none;
+}
+
+
+.pro-sidebar .pro-menu .pro-menu-item > .pro-inner-item > .pro-item-content{
+  white-space: initial  !important;
+}
+
+.pro-sidebar .pro-menu .pro-menu-item.pro-sub-menu .pro-inner-list-item .pro-inner-item{
+  padding: 8px 15px 8px 15px !important;
+}
+
+.fake-btn-position{
+  width: 0px;
+  padding: 0px;
+  // margin-right: 70px;
+  position: relative;
+  right: 70px;
+}
+
+.animatedContainer{
+  transition:all 1s ease;
+}
+
+.modebar-btn.plotlyjsicon.modebar-btn--logo{
+  display:none;
+}
+
+// .forcedStylePloty .js-plotly-plot .plotly .main-svg {
+//   position: unset !important;
+// }
+
+// .forcedStylePloty .js-plotly-plot .plotly .main-svg:nth-of-type(2) {
+//   position: unset !important;
+// }

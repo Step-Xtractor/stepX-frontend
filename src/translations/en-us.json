@@ -1,0 +1,26 @@
+{
+  "page-names": {
+
+  },
+  "form-fields": {
+    "address": "Address",  
+    "bankAccount": "Bank Account",
+    "bankAgency": "Bank Agency",
+    "bankName": "Bank",
+    "birthday": "Birthday",
+    "cep": "CEP",
+    "city": "City",
+    "cpf": "CPF",
+    "email": "Email",
+    "emittingOrgan": "Emitting Organ",
+    "identity": "Identity",
+    "login": "Login",
+    "name": "Name",
+    "password": "Password",
+    "phone": "Phone",
+    "professionalExperience": "Professional Experience",
+    "scholarity": "Scholarity",
+    "sex": "Sex",
+    "uf": "FU"
+  }
+}
